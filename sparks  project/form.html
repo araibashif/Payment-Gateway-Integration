@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NEW ACCOUNT</title>
+     <style type="text/css">
+     html { 
+          background: url(image/jj-ying-7JX0-bfiuxQ-unsplash.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+
+        }
+         
+         .container{
+             width: 600px;
+            
+              
+         }
+         h1{
+            position: relative;
+             left: 650px;
+             font-weight: bold;
+             background-color: darkorange;
+             width: 240px;
+             padding: 10px;
+             align-content: center;
+         }
+         .panel-body{
+             position: relative;
+             left: 500px;
+             font-size: 28px;
+             margin: 20px 20px;
+           
+         }
+         .form-group{
+           padding: 10px 10px;  
+             
+         }
+         #small{
+      
+            text-align: center;
+             position: relative;
+             left: 670px;
+             top:115px;
+             font-size: 24px;
+         }
+         #firstName{
+             font-size: 24px;
+              position: relative;
+             left: 35px;
+         }
+         #lastName{
+             font-size: 24px;
+             position: relative;
+             left: 37px;
+         }
+         #email{
+             font-size: 24px;
+             position: relative;
+             left:92px;
+         }
+         #password{
+             font-size: 24px;
+             position: relative;
+             left: 60px;
+         }
+         #number{
+             font-size: 24px;
+         }
+         .checkit{
+             font-size: 12px;
+             position: relative;
+             top:20px;  
+         }
+         #small a {
+             text-decoration: none;
+             color: black;
+         }
+         #back a{
+            
+             float: right;
+             text-decoration: none;
+               padding :10px;
+             border-radius: 10px;
+             color: whitesmoke;
+             font-size: 24px;
+             background-color: red;
+                 
+         }
+          
+         #back a:hover{
+              
+             background:#0A253C;
+             border-radius:10px;
+             color:white;
+            padding :10px;
+         }  
+          
+      </style>
+           
+  </head>
+  <body>
+      <div id="back"><a href="http://localhost/brackets/sparks%20%20project/home.html"><strong>Cancel</strong></a></div>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1><strong>Application form</strong></h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                placeholder="eg. Araib " ;
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                       placeholder="eg.Ashif" 
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                       placeholder="xyz@email.com" 
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                       placeholder="password" 
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                       placeholder="Phone number" 
+                />
+                  <div><input type="checkbox" class="checkit" name="checkit">
+              <span class="checkit">
+                  <br><mark>I certify that the information I am about to provided is true and complete to
+the best of my knowledge. I am aware that this self declaration statement is
+subject to review and verification and if such information has been falsified I
+may be terminated from the Bank.</mark> <br>
+                      </span>
+                  </div>
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+            </div>
+          <div class="panel-footer text-right">
+            <small id="small">&copy; <a href="sparks%2520%2520project/home.html">United bank </a>2021</small>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </body>
+</html>

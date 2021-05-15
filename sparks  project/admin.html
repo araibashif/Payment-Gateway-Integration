@@ -1,0 +1,200 @@
+<html>
+  <head>  
+    <title>ADMIN</title>
+       
+      <script type="text/javascript">
+        function myFunction() {
+    var x = document.getElementById("pass_text");
+    if (x.type === "password") {
+        x.type = "text";
+    }   
+            else {
+                x.type = "password";
+            }
+        }   
+          function myAdminFunction()
+          {
+              let x = document.getElementById("log_in_input").value ;
+              let y= document.getElementById("pass_text").value;
+               if(x=="admin" && y=="admin")
+                   {
+                      window.location.href = "data.php";
+                   }
+              else 
+                  {
+                      alert ("wrong id/password");
+                  }
+          }
+       
+      </script>
+        
+      <style type="text/css">
+          
+        html { 
+          background: url(image/jj-ying-7JX0-bfiuxQ-unsplash.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+
+        }  
+          body{
+              width: 830px;
+              height: 738px;
+                
+              padding 10px;
+          }
+          #name a {
+               text-decoration: none;
+              font-size:32px;
+               background-color: #0A253C;
+               color:white;
+              padding : 05px;
+              border-radius: 10px;
+              
+          }
+          #name a:hover{
+              text-decoration: none;
+               background-color:#08DAB3; 
+              color:white;
+          }
+          
+          .menu{
+              width: 800px;
+              height: 100px;
+          }
+          .menu a{
+              text-decoration: none;
+              background-color:#0A253C; 
+            color: white;
+              font-size: 24px;
+              font-weight: bold;
+              margin-left: 20px;
+              text-align: center;
+              position:relative;
+              left: 570px;
+              top: 50px;
+              padding: 20px;
+              border-radius: 20px;
+             
+          }
+          .menu a:hover{
+                background-color:#08DAB3 ;
+              border-radius:20px;
+              color: white;
+          }
+          #log_in{
+                width: 600px;
+              height: 100px;
+              margin-left: 400px;
+              text-align: center;
+              font-size: 30px;
+              padding:10px;
+              position: relative;
+              left: 96px;
+              
+          }
+          #log_in_input{
+              width: 200px;
+              margin:20px;
+              height: 40px;
+              font-size: 20px;
+              margin-left:100px;
+          }
+           
+          #pass{
+              width: 700px;
+              height: 100px;
+              text-align: center;
+              padding-left:10px;
+               
+              position: relative;
+             
+              bottom: 45px;
+              left:400px;
+              font-size: 30px;
+              
+          }
+          #pass_text{
+              width: 200px;
+              height: 40px;
+              margin-left:20px;
+              position: relative;
+              left: 82px;
+              font-size: 30px;
+          }
+          #log_in_input_sub{
+              
+              background-color: red;
+              border-radius: 20px; 
+              border: none;
+              color: white;
+              width: 120px;
+              height: 40px;
+              position: relative;
+              left:720px;
+              bottom:60px;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 18px;   
+          }
+          #footer{
+              font-family: cursive;
+                font-size: 18px;
+              float: none;
+              position: relative;
+              left:680px;
+              top:140px;
+              color: #0A253C;
+          }  
+          #footer a{
+              text-decoration: none;
+              color: #0A253C;
+          }
+          #copy{
+              font-family: cursive;
+                font-size: 18px;
+              float: none;
+              position: relative;
+              left:690px;
+              top:150px;
+              color:#0A253C;
+              text-align: left;
+              
+          }
+          #check{
+              position: relative;
+              left:1050px;
+              bottom:100px;
+          }
+      </style>
+  </head>
+  <body>    
+       <div  id="top_bar">    
+           <p id="name"><a href="">United bank</a></p>
+               <div class="menu">
+                <a href="home.html">Home</a>
+               <a href="http://localhost/brackets/sparks%20%20project/form.html">New Account</a>
+               <a href="http://localhost/brackets/sparks%20%20project/checkout.php"><solid>Donate</solid></a>
+                   
+                </div>
+                <div id="middle">
+                    <p id="log_in">Admin ID<input type="text" id="log_in_input" placeholder="eg.admin"> 
+                        <div id="pas_sec">
+                                <div id="pass">
+                                    Password<input type="password" placeholder="password" id="pass_text">
+                                </div>
+                                    <input type="checkbox" id="check" onclick="myFunction()"> 
+                                <div>
+                                    <input id="log_in_input_sub" type="submit"  onclick="myAdminFunction()" value=" logIn">
+                                </div>
+                        </div>
+                    <div id="footer">developed By <a href="https://www.instagram.com/araib.ashif/">Araib ashif</a><br></div>
+                    <div id="copy">&copy;2021 TheCybernatics</div>
+                </div>
+      </div>
+     
+  </body>
+</html>
